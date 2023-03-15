@@ -1,0 +1,363 @@
+/* Fonts:  */
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #dfe1ce;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #fff;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  font-family: "Lato", sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 5vw;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #f4f4f4;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+}
+
+.dropdown-menu.active {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  margin: 10px 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+.heroSection img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 3.4em;
+  margin-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-title-safe {
+  color: #1a237e;
+}
+
+.hero-title-scan {
+  color: #f44336;
+}
+
+.hero-description {
+  font-size: 24px;
+  margin-bottom: 48px;
+  font-family: "Lato", sans-serif;
+}
+
+.hero button {
+  font-family: "Lato", sans-serif;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  scale: 1.04;
+  background-color: #66b76a;
+}
+
+.hero img {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+.introduction-image img {
+  width: 20em;
+  
+}
+
+.introduction-container {
+  display: flex;
+  margin: 0em 5em;
+}
+
+.introduction-content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* text-align: center; */
+}
+
+.section-title{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5em;
+    font-size: 3em;
+}
+
+.section-text{
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
+.features {
+    background-color: #cae3be;
+    border-radius: 30% 30% 40% ;
+    padding: 50px 0;
+    margin-top: 5em;
+  }
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #1a237e;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .col {
+    flex-basis: 33.33%;
+    padding: 20px;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .feature i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #5cb85c;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  #developers {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  #developers h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #developers h2 .redcolor{
+    color: #f44336;
+  }
+  
+  .developers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .developer-card {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .developer-card:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
+  
+  .developer-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .developer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .developer-info {
+    padding: 20px;
+  }
+  
+  .developer-info h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .developer-info p {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2em 0;
+    font-size: 16px;
+    height: 45vh;
+  }
+  
+  footer h4 {
+    color: #fff;
+    font-size: 1.18em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  footer p {
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+  }
+  
+  footer ul li a:hover {
+    color: #ccc;
+  }
+  
+  .row{
+    display: flex;
+    justify-content: space-evenly;
+  }
